@@ -7,7 +7,7 @@ use modules\_default\Bootstrap;
 class Index extends Bootstrap{
   
     public function indexAction(){
-//        $this->cache();
+//        $this->cache(); vvv
     $cart = load_helper('Cart');
 //    $cart->addProduct(4,5); 
     $id = $cart->showProduct();
