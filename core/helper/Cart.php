@@ -1,5 +1,4 @@
 <?php
-echo 
 /*
 name:helper cho phần giỏ hàng
 author:Vuong
