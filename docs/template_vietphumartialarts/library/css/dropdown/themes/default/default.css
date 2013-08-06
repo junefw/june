@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/** 
+ * Default CSS Drop-Down Menu Theme
+ *
+ * @file		default.css
+ * @name		Default
+ * @version		0.1.1
+ * @type		transitional
+ * @browsers	Windows: IE5+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ * Module Classes: *.dir {} *.on {} *.open {} li.hover {} li.first {} li.last {}
+ * Expected directory tag - li
+ *
+ */
+
+
+/*-------------------------------------------------/
+ * @section		Base Drop-Down Styling
+ * @structure	ul (unordered list)
+ *				ul li (list item)
+ *				ul li a (links)
+ *				/*\.class|(li|a):hover/
+ * @level sep	ul
+ */
+
+
+#menu ul.dropdown {
+ font-weight:normal;
+}
+
+	#menu ul li {
+	 padding: 5px 20px;
+	 margin:7px 0;
+	 border-style: solid;
+	 background:url(../../../../../images/icon_menu.jpg) 5px no-repeat;
+	 color: #000;
+	}
+
+	#menu ul.dropdown li.hover,
+	#menu ul.dropdown li:hover {
+	background:url(../../../../../images/icon_menu.jpg) 10px no-repeat; padding-left:25px;
+	font-weight:900;
+	background-color: #eee;
+	border-width: 1px 1px 1px 0;
+	border-color: #fff #d9d9d9 #d9d9d9;
+	color: #000;
+	font-size:11px;
+	}
+
+	#menu ul.dropdown a:link,
+	#menu ul.dropdown a:visited	{ color: #000; text-decoration: none; }
+	#menu ul.dropdown a:hover		{ color: #000; }
+	#menu ul.dropdown a:active	{ color: #ffa500; }
+
+
+	/* -- level mark -- */
+
+	#menu ul.dropdown ul {
+	 width: 180px;
+	 margin-top: 1px;
+	}
+
+		#menu ul.dropdown ul li {
+		 	font-weight: normal;
+		 	background-color:#FFF;
+		  	border-width: 1px 1px 1px 0;
+			border-color: #fff #d9d9d9 #d9d9d9;
+			margin:0px 0;
+		}
+		#menu ul.dropdown ul li:hover{
+			background-color:#eee;	
+		}
+
+
+
+/*-------------------------------------------------/
+ * @section		Support Class `dir`
+ * @level sep	ul, .class
+ */
+
+
+#menu ul.dropdown *.dir {
+ padding-right: 20px;
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+
+
+/* -- Components override -- */
+
+#menu ul.dropdown-horizontal ul *.dir {
+ padding-right: 15px;
+
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+
+#menu ul.dropdown-upward *.dir {
+ background-image: url(images/nav-arrow-top.png);
+}
+
+#menu ul.dropdown-vertical *.dir,
+#menu ul.dropdown-upward ul *.dir {
+ background:url(../../../../../images/icon_menu.jpg) 5px no-repeat;
+}
+
+#menu ul.dropdown-vertical-rtl *.dir {
+ padding-right: 10px;
+ padding-left: 15px;
+ background-image: url(../images/nav-arrow-left.png);
+ background-position: 0 50%;
+}

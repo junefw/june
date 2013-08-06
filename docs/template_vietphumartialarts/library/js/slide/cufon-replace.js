@@ -1,0 +1,2 @@
+Cufon.replace('h1 a', { fontFamily: 'Swis721 BlkCn BT',color: '-linear-gradient(#fff #d7d7d7)',textShadow:'0 1px #000,1px 0 #99948e' });
+Cufon.replace('h2,h3 span,h4 span', { fontFamily: 'Swis721 BlkCn BT'});

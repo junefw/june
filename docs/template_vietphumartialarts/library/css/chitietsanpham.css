@@ -1,0 +1,133 @@
+/*/////////////chi tiet ---------*/
+@charset "utf-8";
+/* CSS Document */
+.main_khung,#detail_img,#detail_info,#detail_link,#detail_comment1{
+	float:left;
+}
+.main_khung{
+	width:680px;
+	border:solid 1px #F2EFE3;
+	padding:10px 10px 0 10px;
+}
+.main_khung #short_info{
+	float:left;
+	overflow:hidden;	
+	padding-bottom:60px;
+	width:100%;
+}
+.main_khung #short_info .khung_img{
+	float:left;
+	overflow:hidden;
+	max-width:330px;	
+}
+.main_khung ul.lib_img{
+	display:block;
+	margin-top:10px;
+}
+.main_khung ul.lib_img li{
+	float:left;
+	display:inline;
+	margin:10px 0 0 10px;	
+}
+.main_khung ul.lib_img li img{
+	height:40px;
+	width:50px;
+}
+#detail_img img{
+	max-width:328px;
+	border:solid 1px #F2EFE3;
+	margin-top:0;	
+}
+#detail_info{
+	max-width:330px;
+	padding-left:20px;
+}
+#detail_info .detail_p{
+	width:150px;
+	height:30px;
+	border:solid 1px #CCC;
+	background-color:#E5E5E5;
+	line-height:30px;
+	padding:10px;
+	margin-top:10px;	
+}
+#detail_info p .input{
+	width:50px;
+	height:20px;
+	border:solid 1px #CCC;
+	margin-left:10px;
+	margin-bottom:0;	
+}
+.main_khung #detail_info .title{
+	font-weight:900;
+	font-size:14px;	
+}
+.tabs {
+	width: 100%;
+	height: 31px;
+	margin-bottom:3px;
+	margin-top:20px;
+}
+.tabs a {
+	float: left;
+	display: block;
+	padding: 6px 15px 7px 15px;
+	margin-right: 2px;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	background: #FFFFFF url('images/tab_3.png') repeat-x;
+	color: #000000;
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+	z-index: 1;
+	position: relative;
+	top: 1px;
+}
+.tabs a.selected {
+	background: #FFFFFF url('images/tab_3.png') repeat-x;
+	border-bottom: 0px;
+	padding-bottom: 8px;
+	z-index: 3;
+}
+.tab_page {
+	border: 1px solid #DDDDDD;
+	background: #FFFFFF;
+	padding: 10px;
+	display: block;
+	z-index: 2;
+	margin-bottom: 10px;
+
+}
+.show_link{
+	height:20px;
+	margin-bottom:10px;
+	width:99%;
+}
+.detail_comment{
+	border:solid 1px #F2EFE3;
+	padding:5px;
+	margin:5px 0;	
+}
+.detail_comment p{
+	margin-top:5px;	
+}
+#detail_comment1{
+	width:90%;
+	padding:5px;
+	margin-top:20px;	
+}
+.comment_input{
+	border:solid 1px #F2EFE3;
+	padding:3px;
+	margin-right:20px;	
+	height:12px;
+	color:#999;
+}
+.comment_textarea{
+	border:solid 1px #F2EFE3;
+	padding:3px;
+	margin-top:10px;
+} 	

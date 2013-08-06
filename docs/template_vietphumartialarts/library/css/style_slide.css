@@ -1,0 +1,143 @@
+.slider h2, p,.slider a,.slider li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+.slider img {
+	border:0;
+	vertical-align:top;
+	text-align:left;
+}
+
+.header-block ul, ol {
+	list-style:none;
+}
+
+.header-block ul	 {
+	height:265px;
+	margin-top:2px;
+}
+/*==== GLOBAL =====*/
+#main {
+	width:970px;
+	margin:0 auto;
+	font-size:.75em;
+	font:12px/17px Arial, Helvetica, sans-serif;
+	color:#000;	
+}
+header{
+	position:relative;
+	background-color:#333;
+}
+
+/*----- other -----*/
+
+a.button{
+	color:#fff;
+	background:url(../../images/button-bg.gif);
+	float:right;
+	text-decoration:none;
+}
+
+a.button b{
+	font:12px/29px Arial, Helvetica, sans-serif;
+	float:left;
+	padding-right:17px;
+	background:url(../../images/button-right.gif) right top no-repeat;
+}
+
+a.button strong{
+	float:left;
+	padding-left:17px;
+	background:url(../../images/button-left.gif) left top no-repeat;
+	
+}
+
+a.button:hover{
+	color:#000;
+	cursor:pointer;
+}
+
+
+/*===== header =====*/
+
+header h1{
+	position:absolute;
+	top:90px;
+	left:0;
+}
+
+/*header .header-block{background:url(../../images/bg_content.jpg) repeat-y;}*/
+header .header-block,header .header-block #bg{
+	position:absolute;
+	left:0;
+	top:0;
+	width:970px;
+	height:295px;
+	background-color:#FFF;
+	background:url(../../images/bg_content.jpg) repeat-y;
+}
+header .header-block #bg{
+	bottom:0;
+	background:url(../../images/bg_slide.png) no-repeat;
+	background-position:bottom;
+}
+header .header-block .slider{ margin-top:5px; margin-right:15px; float:right; position:relative; z-index:1; width:678px; overflow:inherit !important}
+header .header-block .slider .items{ display:none}
+
+header .header-block .banner{ position:absolute; left:-241px; top:10px; z-index:2; background:#fff}
+
+header .curr-info{
+	width:220px;
+}
+
+header .curr-info h2{
+	font:28px/1.2em Arial, Helvetica, sans-serif;
+	font-weight:900;
+	color:#000;
+	letter-spacing:-1px;
+	margin-bottom:-6px;
+}
+header .curr-info h2 p{
+	font-size:16px;
+}
+
+header .curr-info h2 span{
+	font:23px/1.2em Arial, Helvetica, sans-serif;
+	position:relative;
+	top:-16px;
+	letter-spacing:normal;
+}
+
+header .header-block a.button{
+	position:absolute;
+	left:120px;
+	top:202px;
+	z-index:10;
+}
+
+header .prev{
+	position:absolute;
+	left:-5px;
+	top:127px;
+	z-index:10;
+	width:43px; height:43px;
+	display:block; background:url(../../images/marker_left.png) right 0 no-repeat
+}
+
+header .prev:hover{ background-position: left}
+header .next:hover{ background-position: right}
+
+header .next{
+	position:absolute;
+	right:-5px;
+	top:127px;
+	z-index:10;
+	width:43px; height:43px;
+	display:block; background: url(../../images/marker_right.png) left 0 no-repeat
+}
