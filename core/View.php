@@ -71,7 +71,7 @@ class View {
             $action = $this->conf['template']['view'][$this->router->action];
         }
         
-        $file = 'view/' . $this->router->controller . '/'.$action.'.tpl';
+        $file = 'view/' . $this->router->module . '/' . $this->router->controller . '/'.$action.'.tpl';
 
         $this->render($file);
         
@@ -157,6 +157,7 @@ class View {
             'module' => $this->router->module,
             'view' => $this,
         );
+        
         $this->doAssign($arrData);
     }
 }

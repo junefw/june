@@ -12,7 +12,7 @@ class Index extends Bootstrap{
 //    $cart->addProduct(4,5); 
     $id = $cart->showProduct();
     $cart->removeAll();
-    echodebug($id);
+    //echodebug($id);
         $model = array(
             'test1' => 'hello',
         );
